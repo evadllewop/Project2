@@ -1,5 +1,5 @@
 // Requiring necessary npm packages
-const express = require("express");
+const express = require('express');
 const session = require("express-session");
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
@@ -18,7 +18,7 @@ app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
 );
 app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.session())
 
 // Requiring our routes
 require("./routes/html-routes.js")(app);
