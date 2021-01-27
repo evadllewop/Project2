@@ -22,7 +22,7 @@ body {
 }
 .bgLogin {
   background-image: url("../img/dayCare_bg1.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,6 +30,7 @@ body {
 .wrapper {
   display: flex;
     width: 50%;
+    height:100%;
     align-items: flex-start;
 }
 .calWrapper {
@@ -115,6 +116,10 @@ margin-bottom: 14px;
   background-color:#ce4141 ;
 }
 
+.secLabel {
+  font-weight:700;
+}
+
 .btn-secondary {
   font-size: 14px;
   color:#6B7897;
@@ -182,6 +187,20 @@ margin-bottom: 14px;
   border: none;
   border-radius: 8px;
   background-color: white;
+  color:#6B7897;
+  height: 70px;
+  margin-left:20px;
+  margin-top:20px;
+  /* margin: 20px; */
+  box-shadow: 0 0px 20px -6px rgb(190, 190, 190);
+  /* vertical-align: baseline; */
+  
+}
+.calRowScheduled {
+  border: none;
+  border-radius: 8px;
+  background-color: #ce4141;
+  color:white;
   height: 70px;
   margin-left:20px;
   margin-top:20px;
@@ -198,18 +217,38 @@ margin-bottom: 14px;
   font-weight: 500;
 }
 .calDay {
-  color: #6B7897;
+  /* color: #6B7897; */
   font-size: 12px;
   font-weight: 300;
 }
 .calMonth {
   margin-top: 18px;
-color: #6B7897;
+/* color: #6B7897; */
 font-size: 12px;
 font-weight: 600;
 /* display: inline-block;
   vertical-align: middle; */
 
 }
+
+.input-icons i { 
+  position: absolute; 
+} 
+
+.input-icons { 
+  width: 100%; 
+  margin-bottom: 10px; 
+} 
+
+.icon { 
+  padding: 10px; 
+  min-width: 40px; 
+} 
+
+.input-field { 
+  width: 100%; 
+  padding: 10px; 
+  text-align: center; 
+} 
 
 
