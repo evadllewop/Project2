@@ -16,7 +16,7 @@ body {
 }
 .bgProfile {
   background-image: url("../img/dayCare_bg2.jpg");
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
