@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Passport Authentication</title>
+    <title>Create Profile</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
@@ -13,98 +13,189 @@
     <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <nav class="navbar navbar-light bg-light" id="sideNav">
-                    <div class="navbar-header"><img class="logo" src="" alt="">
-                    </div>
-
-                </nav>
-
-            </div>
-            <div class="col-md-10">
-                <div class="container">
+<body class="bgProfile">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
                     <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="h2MainHeader">Parent Name</h2>
-                            <form class="createProfile">
-                                <img src="https://via.placeholder.com/150" alt="placeholder">
-                                <div class="form-group">
-                                    <!-- <label for="exampleInputEmail1">Email address</label> -->
-                                    <input type="text" class="form-control" id="parentName" placeholder="Parent's Name">
+                        <nav class="navbar navbar-light bg-light" id="sideNav">
+                            <div><img class="logo" src="../public/img/ddc_logo.png" alt="">
+                                <div class="row">
+                                    <a href="#">
+                                        <div class="col-md-12 navItemActive"><i class="far fa-user"></i>User
+                                            Profile
+                                        </div>
+                                    </a>
                                 </div>
-                                <div>
-                                    <label for="formFileSm">Update Parent's Picture</label>
-                                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                <div class="row">
+                                    <a href="#">
+                                        <div class="col-md-12 navItem"><i class="far fa-map"></i>Daycare Map
+                                        </div>
+                                    </a>
                                 </div>
+                                <div class="row">
+                                    <a href="#">
+                                        <div class="col-md-12 navItem"><i class="far fa-envelope"></i>Messages
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="#">
+                                        <div class="col-md-12 navItem"><i class="far fa-clipboard"></i>Nutrition
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="calendar.html">
+                                        <div class="col-md-12 navItem"><i class="far fa-calendar-alt"></i>Calendar
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="#">
+                                        <div class="col-md-12 navItem"><i class="far fa-eye"></i>Webcam
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="h2MainHeader">Parent Info</h2>
+                                <form class="createProfile">
 
-                                <button class="btn-primary" type="submit" onclick="'/login'">Save Parent</button>
-                                <!-- <button class="btn-secondary" type="submit" onclick="'/signup'">Add Parent <i class="fas fa-plus"></i></button> -->
-                                <button class="btn-primary" type="submit" onclick="'/login'">Save Image</button>
+                                    <div class="col-md-4">
+                                        <img src="https://via.placeholder.com/150" class="uploadPic" alt="placeholder">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="childBio">Update Parent's Picture</label>
+                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                        <br>
+                                        <button class="btn-primary" type="submit" onclick="'/login'">Save Image</button>
+                                    </div>
 
-                            </form>
-                            <br />
-                            <!-- <p>Or sign up <a href="/">here</a></p> -->
+                                    <div class="form-group">
+                                        <!-- <label for="exampleInputEmail1">Email address</label> -->
+
+                                        <input type="text" class="form-control" id="parentName"
+                                            placeholder="Parent's Name">
+                                    </div>
+
+
+                                    <button class="btn-primary" type="submit" onclick="'/login'">Save Parent</button>
+                                    <button class="btn-secondary" type="submit" onclick="'/login'">Add Parent<i
+                                            class="fas fa-plus"></i></button>
+                                    <!-- <button class="btn-secondary" type="submit" onclick="'/signup'">Add Parent <i class="fas fa-plus"></i></button> -->
+
+
+                                </form>
+                                <br />
+                                <!-- <p>Or sign up <a href="/">here</a></p> -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="h2MainHeader">Child Info</h2>
-                            <div class="w3-container">
-                                <button onclick="document.getElementById('id01').style.display='block'" class="btn-secondary">Add Child</button>
-                                <div id="id01" class="w3-modal">
-                                  <div class="w3-modal-content w3-animate-top w3-card-4">
-                                    <header class="w3-container-w3"> 
-                                      <span onclick="document.getElementById('id01').style.display='none'" 
-                                      class="w3-button w3-display-topright">&times;</span>
-                                      <h2>Child Info</h2>
-                                    </header>
-                                    <div class="w3-container">
-                                        <div>
-                                        <img src="https://via.placeholder.com/150" alt="placeholder">
-                                        
-                                        <input type="text" class="form-control" id="childName"
-                                        placeholder="Child's Name">
-                                        </div>
-
-                                        <div>
-                                            <label for="formFileSm">Update Your Child's Picture</label>
-                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
-                                        </div>
-                                        <div class="field">
-                                            <label for="childAge">Child's Age </label>
-                                            <input type="number" class="form-control" id="childAge" placeholder="Child's Birthday MM-DD-YYYY">
-                                        </div>
-                                        <div class="field">
-                                            <label for="childBio">Child Bio </label>
-                                            <input type="text" class="form-control" id="childBio" placeholder="Tell us a litte about your child">
-                                        </div>
-                                        <div class="field">
-                                            <label for="childBio">Does your child have any allergies? </label>
-                                            <input type="text" class="form-control" id="childBio" placeholder="If so, please state what kind.">
-                                        </div>
-                                        <div class="field">
-                                            <label for="childBio">Does your child take any scheduled medication? </label>
-                                            <input type="text" class="form-control" id="childBio" placeholder="If so, please state what kind and the times.">
-                                        </div>
-                                        <div class="field">
-                                            <label for="childBio">Does your child have any diet restrictions? </label>
-                                            <input type="text" class="form-control" id="childBio" placeholder="Ex : No Sugar or No Chips.">
-                                        </div>
-                                        <button class="btn-primary" type="submit" onclick="'/login'">Save Child's Information</button>
-
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="h2MainHeader">Child Info</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button onclick="document.getElementById('id01').style.display='block'"
+                                            class="btn-secondary">Add Child<i class="fas fa-plus"></i></button>
                                     </div>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
+                                <div class="w3-container">
+
+                                    <div id="id01" class="w3-modal">
+                                        <div class="w3-modal-content w3-animate-top w3-card-4">
+                                            <header class="w3-container-w3">
+                                                <!-- <div class="row"> -->
+                                                <div class="col-md-12">
+                                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                                        class="w3-button w3-display-topright">&times;</span>
+                                                    <h2 class="h2MainHeader">Child Info</h2>
+                                                </div>
+                                                <!-- </div> -->
+                                            </header>
+                                            <div class="w3-container">
+                                                <form class="createProfile">
+
+                                                    <div class="col-md-3">
+                                                        <img src="https://via.placeholder.com/150" class="uploadPic"
+                                                            alt="placeholder">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Update Child's Picture</h6>
+                                                        <input class="form-control form-control-sm" id="formFileSm"
+                                                            type="file">
+                                                        <br>
+                                                        <button class="btn-primary" type="submit"
+                                                            onclick="'/login'">Save
+                                                            Image</button>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+
+
+                                                            <div class="field">
+                                                                <label for="childName">Child's Name </label>
+                                                                <input type="text" class="form-control" id="childName"
+                                                                    placeholder="Child's Name">
+                                                            </div>
+                                                            <div class="field">
+                                                                <label for="childAge">Child's Age </label>
+                                                                <input type="number" class="form-control" id="childAge"
+                                                                    placeholder="Child's Birthday MM-DD-YYYY">
+                                                            </div>
+                                                            <div class="field">
+                                                                <label for="childBio">Child Bio </label>
+                                                                <input type="text" class="form-control" id="childBio"
+                                                                    placeholder="Tell us a litte about your child">
+                                                            </div>
+                                                            <div class="field">
+                                                                <label for="childBio">Does your child have any
+                                                                    allergies?
+                                                                </label>
+                                                                <input type="text" class="form-control" id="childBio"
+                                                                    placeholder="If so, please state what kind.">
+                                                            </div>
+                                                            <div class="field">
+                                                                <label for="childBio">Does your child take any scheduled
+                                                                    medication?
+                                                                </label>
+                                                                <input type="text" class="form-control" id="childBio"
+                                                                    placeholder="If so, please state what kind and the times.">
+                                                            </div>
+                                                            <div class="field">
+                                                                <label for="childBio">Does your child have any diet
+                                                                    restrictions?
+                                                                </label>
+                                                                <input type="text" class="form-control" id="childBio"
+                                                                    placeholder="Ex : No Sugar or No Chips.">
+                                                            </div>
+                                                            <button class="btn-primary" type="submit"
+                                                                onclick="'/login'">Save
+                                                                Child's Information</button>
+
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

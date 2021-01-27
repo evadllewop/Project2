@@ -1,25 +1,66 @@
 form.signup,
 form.login,
 form.createProfile {
-  margin-top: 50px;
+  margin-top: 40px;
 }
-/* 
+
 * {
   box-sizing: border-box;
-} */
+}
 
 
 body {
+  margin:0;
   background-color: #FCFBFC;
   font-family: 'Montserrat', sans-serif;
 }
+.bgProfile {
+  background-image: url("../img/dayCare_bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgLogin {
+  background-image: url("../img/dayCare_bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.wrapper {
+  display: flex;
+    width: 50%;
+    align-items: flex-start;
+}
+.calWrapper {
+  margin-top: 20px;
+  /* margin-left: 10px; */
+  /* display: flex; */
+  /* width: 50%; */
+    /* align-items: flex-start; */
+}
+header {
+  padding:20px;
+  margin-bottom: 0;
+}
+
+.uploadPic {
+  margin-bottom: 30px;
+}
+
+.w3-container {
+padding: 30px;
+
+}
+
+.field {
+margin-bottom: 14px;
+}
 
 .navbar {
-  
-  margin-bottom: 100px;
-  height:100px;
-  width: 100%;
+  margin-bottom: 60px;
+  height:130px;
+  /* width: 100%; */
   background-color: white;
   display: flex;
   vertical-align: middle;
@@ -27,16 +68,34 @@ body {
   align-content: center;
   box-shadow: 0 2px 12px -6px #999;
 }
+.navItem {
+  color: #A8B2B9;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.navItemActive {
+  color: #000;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.fa-plus {
+  margin-left: 6px;
+  font-size: 11px;
+  color:#60CDFF
+}
 
 .logo{
-  /* display: block; */
-  /* position: absolute; */
-  
-  margin-top: 10px;
-  height:80px;
-  
+  margin-top: 40px;
+  margin-bottom: 50px;
+  height:100px;
 }
 .btn-primary {
+  font-size: 14px;
   border:none;
   background-color:#ED5454 ;
   border-radius:20px;
@@ -58,12 +117,13 @@ body {
 }
 
 .btn-secondary {
+  font-size: 14px;
   color:#6B7897;
   border: 1px solid #eee;
   /* width: 160px; */
   background-color:white ;
   border-radius:20px;
-  border-radius:20px;
+  padding: 8, 30, 8, 30;
   padding-top: 8px;
   padding-right: 30px;
   padding-bottom: 8px;
@@ -72,11 +132,32 @@ body {
   box-shadow: 0 0px 20px -6px rgb(190, 190, 190);
 }
 
+.btn-add {
+  background-color: white;
+  font-size: 12px;
+  border:1px solid #eaeaea;
+  border-radius:20px;
+  padding-top: 6px;
+  padding-right: 24px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  /* margin-right:5px; */
+  margin-top: 20px;
+}
+.far {
+  margin-right: 10px;
+}
+.iconCurrent {
+  color:#ce4141; 
+}
+
 .h2MainHeader {
   /* text-align: center; */
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .loginContainer {
@@ -94,11 +175,42 @@ body {
 }
 
 #sideNav {
-height:600px;
+  width: 180px;
+  height:900px;
 }
 
-.w3-container-w3{
-  background-color:#ED5454 
+.calRow {
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  height: 70px;
+  margin-left:20px;
+  margin-top:20px;
+  /* margin: 20px; */
+  box-shadow: 0 0px 20px -6px rgb(190, 190, 190);
+  /* vertical-align: baseline; */
+  
+}
+
+.calDate {
+  margin-top: 12px;
+  margin-right: 6px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.calDay {
+  color: #6B7897;
+  font-size: 12px;
+  font-weight: 300;
+}
+.calMonth {
+  margin-top: 18px;
+color: #6B7897;
+font-size: 12px;
+font-weight: 600;
+/* display: inline-block;
+  vertical-align: middle; */
+
 }
 
 
