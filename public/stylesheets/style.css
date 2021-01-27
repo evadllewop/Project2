@@ -59,7 +59,7 @@ margin-bottom: 14px;
 
 .navbar {
   margin-bottom: 60px;
-  height:130px;
+  height:120px;
   /* width: 100%; */
   background-color: white;
   display: flex;
@@ -67,6 +67,11 @@ margin-bottom: 14px;
   justify-content: center;
   align-content: center;
   box-shadow: 0 2px 12px -6px #999;
+}
+.logo{
+  margin-top: 54px;
+  margin-bottom: 50px;
+  height:100px;
 }
 .navItem {
   color: #A8B2B9;
@@ -87,12 +92,6 @@ margin-bottom: 14px;
   margin-left: 6px;
   font-size: 11px;
   color:#60CDFF
-}
-
-.logo{
-  margin-top: 40px;
-  margin-bottom: 50px;
-  height:100px;
 }
 .btn-primary {
   font-size: 14px;
