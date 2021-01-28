@@ -10,7 +10,7 @@ This application was intended for parents to stay connected with the daycare fac
     - Front End: Logo's, background, CSS, anything visual.
     - Back End: HTML, Calendar, and any assistance that was needed with the back-end
 ## Jose Valdez 
-    - Back End: MySQL Database, JS, Handlebars, & routes 
+    - Back End: HTML, MySQL Database, JS, Handlebars, & routes 
 
 ## Diana Trujillo 
     - Back End: Worked closely with Jose on the back end as far as troubleshooting, testing, and authentication 
